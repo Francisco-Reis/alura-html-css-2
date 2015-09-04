@@ -1,0 +1,10 @@
+-- Medidas de html/css --
+px = pixels absolutos nao redimensionaveis
+rem = multiplica o tamanho do objeto com relação a fonte em altura (do navegador)
+em = multiplica o tamanho do objeto com relação a fonte em altura (do elemento)
+ch = multiplica o tamanho do objeto com relação a fonte em largura (do caracter zero)
+Usar medidas relativas (em,rem,ch) facilita na redimensão geral, fica centralizado em uma unica
+linha de código, referente ao tamanho de fonte.
+
+em = fonte do elemento container
+rem = fonte da tag html ou do navegador
