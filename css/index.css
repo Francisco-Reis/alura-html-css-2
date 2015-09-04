@@ -183,24 +183,23 @@ main {
 .foto-home{
     border-radius: 50%;
 }
-.faixa-twitter {
-    background-color: purple;
-    position: 300px;
-    width: 20ch;
-    top: 0;
-    right: 0;
-    padding: .3em 6ch;
-    border: .2em solid black;
-    /* transformando em faixa */
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    transform: rotate(45deg);
-    transform: translateX(cos(45) * (1em - 300px) + 300px);
-    transform: translateY(-1 * sen(45) * 1em);
+.banner-twitter {
+  width: 14em;
+  line-height: 1;
+  padding: 1em 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3C1D3D;
+  color: white;
+  border: .25em solid black;
+  font-size: 1.2em;
+  font-family: "Open Sans Condensed", sans-serif;
 }
-.faixa-twitter a {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1em;
-    color: white;
+.banner-twitter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: 0 0;
+  transform: translate(6.5765em, -2.4745em) rotate(45deg);
 }

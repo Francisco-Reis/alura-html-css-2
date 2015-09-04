@@ -44,6 +44,9 @@ mover: translate(10px, 50px);
 OBS: A ordem das transformaçoes conta, sempre da direita pra esquerda na lista
 OBS: Transformações nao funcionam em objetos inline, deve-se mudar pra inline-block
 transform-origin: muda o ponto de pertida do objeto (padrao no centro)
+Calculos para se fazer faixa transversal (fazer calculos manualmente):
+Na horizontal: cos(45) * (altura - largura) + largura
+Na vertical: -1 * sen(45) * altura
 
 --- Transform 3D ---
 translateX,translateY,translateZ: mover o objeto por eixo
