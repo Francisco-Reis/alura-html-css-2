@@ -1,28 +1,34 @@
 .foto-home {
-    height: 200px;
+    height: 10em;
 }
 .saudacao p {
     color: #99A;
     line-height: 1;
+    text-align: center;
 }
 .saudacao-inicio {
     color: #889;
+    font-size: 2.5em;
 }
 .saudacao-ultima-linha {
     text-align: right;
     display: block;
+    padding-left: 1ch;
 }
 .saudacao strong {
     color: #000;
+    font-size: 2em;
+    padding-right: 10ch;
 }
 .saudacao em {
     color: #851944;
+    font-size: 3em;
 }
 .botao-index {
     background-color: #851944;
     color: #FFF;
     border: .2em solid black;
-    width: 400px;
+    width: 20em;
     display: block;
     text-align: center;
 }
@@ -31,15 +37,15 @@
 }
 .trabalhos {
     background-color: #3C1D3D;
-    border-top: 10px solid #000;
-    border-bottom: 10px solid #000;
+    border-top: .5em solid #000;
+    border-bottom: .5em solid #000;
 }
 .trabalhos h2 {
     color: #FFF;
 }
 .trabalhos ul {
     overflow: hidden;
-    border: 10px solid black;
+    border: .5em solid black;
 }
 .trabalhos li {
     float: left;
@@ -52,7 +58,7 @@
 .blog {
     background-color: #999;
     color: #FFF;
-    border-bottom: 10px solid #851944;
+    border-bottom: .5em solid #851944;
 }
 .blog li a {
     color: #FCF;
