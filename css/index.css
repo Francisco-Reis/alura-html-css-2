@@ -22,6 +22,8 @@
 .saudacao em {
     color: #851944;
     font-size: 4em;
+    display: inline-block;
+    transform: rotate(-5deg) skew(-15deg);
 }
 .botao-index {
     font-size: 1.25em;
@@ -102,56 +104,68 @@ main {
   position: absolute;
   top: 20%;
   left: 75%;
+  transform: rotate(10deg);
 }
 .boas-praticas {
   position: absolute;
   top: 75%;
   left: 20%;
+  transform: rotate(-10deg);
 }
 .codigo-limpo {
   position: absolute;
   top: 50%;
   left: 10%;
+  transform: rotate(10deg);
 }
 .css3 {
     position: absolute;
     top: 55%;
     left: 30%;
+    transform: rotate(-10deg);
 }
 .html5 {
     position: absolute;
     top: 45%;
     left: 80%;
+    transform: rotate(10deg);
 }
 .javascript {
     position: absolute;
     top: 10%;
     left: 60%;
+    transform: rotate(-10deg);
 }
 .acessibilidade {
     position: absolute;
     top: 35%;
     left: 25%;
+    transform: rotate(10deg);
 }
 .responsivo {
     position: absolute;
     top: 15%;
     left: 20%;
+    transform: rotate(-10deg);
 }
 .otimizacoes {
     position: absolute;
     top: 65%;
     left: 70%;
+    transform: rotate(10deg);
 }
 .agilidade {
     position: absolute;
     top: 10%;
     left: 30%;
+    transform: rotate(-10deg);
 }
 .design {
     position: absolute;
     top: 40%;
     left: 65%;
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 .blog {
     position: relative;
@@ -165,4 +179,28 @@ main {
     height: 8em;
     color: black;
     background-color: white;
+}
+.foto-home{
+    border-radius: 50%;
+}
+.faixa-twitter {
+    background-color: purple;
+    position: 300px;
+    width: 20ch;
+    top: 0;
+    right: 0;
+    padding: .3em 6ch;
+    border: .2em solid black;
+    /* transformando em faixa */
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    transform: translateX(cos(45) * (1em - 300px) + 300px);
+    transform: translateY(-1 * sen(45) * 1em);
+}
+.faixa-twitter a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
 }

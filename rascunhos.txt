@@ -17,3 +17,37 @@ Ex:
 Caso um container tenha o atributo position (div), a posição é em relação ao container
 Por exemplo, se o div tiver 'position: relative', o elemento fica absoluto em relação ao div.
 OBS: o 'position: static' é o unico que não pega os absolutes de seus filhos
+
+-- border-radius --
+Para gerar bordar arredondadas.
+Ex:
+> div ( border radius: 10px;)
+> div ( border radius: 10px 0;) -- somente duas pontas arredondadas
+> div ( border radius: 10px 20px 10px 30px;) -- todas as pontas individualmente
+Bordas elipticas
+> border-radius: <raios na horizontal> / <raios na vertical>
+> border-radius: 10% 50% / 50% 10%;
+
+--- Funcionalidades novas (beta) ---
+Usar o prefixo:
+-webkit- : para Chrome e Safari e Opera
+-moz- : para Firefox
+-ms- : para IE
+Sempre usar sem prefixo também para futuras versões, deixa-la sempre por ultimo (future proof)
+Catalogo de funcionalidades Beta: 'caniuse.com'
+
+-- Transform ---
+rotacionar: > transform: rotate(30deg);
+entortar: > transform: skew(20deg);
+aumentar: scale(1.2)
+mover: translate(10px, 50px);
+OBS: A ordem das transformaçoes conta, sempre da direita pra esquerda na lista
+OBS: Transformações nao funcionam em objetos inline, deve-se mudar pra inline-block
+transform-origin: muda o ponto de pertida do objeto (padrao no centro)
+
+--- Transform 3D ---
+translateX,translateY,translateZ: mover o objeto por eixo
+perspective: a distancia virtual dos olhos para a tela
+perspective-origin: posição da tela do observador
+transform-style: preserve-3d -> caso for ter efeito 3d dentro de outro elemento 3d, como um cubo
+com suas 6 faces, por exemplo.
