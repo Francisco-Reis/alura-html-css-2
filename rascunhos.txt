@@ -8,3 +8,12 @@ linha de código, referente ao tamanho de fonte.
 
 em = fonte do elemento container
 rem = fonte da tag html ou do navegador
+
+-- Position absolute --
+Posição absoluta fora do fluxo no container (padrão: em relação a página)
+Ex:
+> position: absolute;
+> top: 3em;
+Caso um container tenha o atributo position (div), a posição é em relação ao container
+Por exemplo, se o div tiver 'position: relative', o elemento fica absoluto em relação ao div.
+OBS: o 'position: static' é o unico que não pega os absolutes de seus filhos
