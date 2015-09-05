@@ -99,73 +99,71 @@ main {
 }
 .palavra-home {
     font-family: "Shadows Into Light" cursive;
+    position: absolute;
+}
+.palavras-home{
+    perspective: 6px;
+    perspective-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .eficiencia {
-  position: absolute;
-  top: 20%;
-  left: 75%;
-  transform: rotate(10deg);
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
 }
 .boas-praticas {
-  position: absolute;
-  top: 75%;
+  top: 70%;
   left: 20%;
-  transform: rotate(-10deg);
+  transform: translate(-50%, -50%) rotate(10deg) translateZ(1px);
 }
 .codigo-limpo {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: rotate(10deg);
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(-10deg) translateZ(2px);
 }
 .css3 {
-    position: absolute;
-    top: 55%;
-    left: 30%;
-    transform: rotate(-10deg);
+  top: 55%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(5deg) translateZ(2px);
 }
 .html5 {
-    position: absolute;
-    top: 45%;
-    left: 80%;
-    transform: rotate(10deg);
+  top: 30%;
+  left: 65%;
+  transform: translate(-50%, -50%) rotate(10deg) translateZ(2px);
 }
 .javascript {
-    position: absolute;
-    top: 10%;
-    left: 60%;
-    transform: rotate(-10deg);
+  top: 15%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px);
 }
 .acessibilidade {
-    position: absolute;
-    top: 35%;
-    left: 25%;
-    transform: rotate(10deg);
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px);
 }
 .responsivo {
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    transform: rotate(-10deg);
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(10deg) translateZ(3px);
 }
 .otimizacoes {
-    position: absolute;
-    top: 65%;
-    left: 70%;
-    transform: rotate(10deg);
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%) rotate(-5deg) translateZ(2px);
 }
 .agilidade {
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    transform: rotate(-10deg);
+  top: 75%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(5deg) translateZ(1px);
 }
 .design {
-    position: absolute;
-    top: 40%;
-    left: 65%;
-    -ms-transform: rotate(10deg);
-    transform: rotate(10deg);
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(10deg) translateZ(2px);
 }
 .blog {
     position: relative;
