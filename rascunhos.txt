@@ -105,3 +105,31 @@ Novos elementos:
 irmão ~ irmão
 irmão + irmão seguinte
 pai > filho
+
+Seletor de atributo:
+[href="http://www.alura.com.br"] Pega tofas as tgs que tenham exatamente esse valor
+[src$=".jpg"] Todas as tags que tenha o atributo src e que terminem com .jpg
+[href^="http://"] hrefs que comecem com http://
+[class] todas as tags que contem classe
+
+-- Pseudoclasses ---
+Classes padroes colocadas pelo navegador
+:nth-child -> percorre os filhos, comeća do zero
+:nth-child(odd) -> seleciona os ímpares
+:nth-child(3) -> seleciona o terceiro
+:first-child, :last_child
+ex:
+tr:nth-child(even) -> linhas de tabelas pares
+tr:nth-child(5n) -> linhas multplas de 5
+
+nth-of-type: Conta só os objetos de um certo tipo
+ex: blockquote:nth-of-type(even) -> pega todos os blockquote impares da pagina
+
+:hover -> pseudoclasse dinamica que muda um objeto ao contato do mouse
+:focus -> foco em formularios
+:active -> clique no elemento
+
+É possivel selecionar duas pseudoclasses de uma vez:
+:nth-child(1):nth-last-child(1) -> pega somente elementos q sao filhos unicos
+:only-child -> faz o mesmo q a linha acima
+:nth-last-of-child, :nth-last-of-type, comeća a contagem de tras pra frente
