@@ -87,3 +87,21 @@ Faixa fina em gradiente:
 > background-repeat: no-repeat;
 > background-size: 80% 5px;
 > background-position: 50% 50%;
+
+-- Selecao de elementos CSS ---
+tag
+#index
+.class
+ancestral descendente
+
+Novo elemento: ~ (Siginifica depois de, funciona para irmaos)
+Ex: li ~ li: Pega todos os li depois do primeiro li
++ (peag o primeiro imediatamente depois, funciona para irmaos)
+Ex: img + p: Pega p primeiro p depois de uma imagem
+> (pega só um grau de hierarquia e nao tudo)
+Ex: div > p (pega só filhos e nao netos, bisnetos etc..)
+
+Novos elementos:
+irmão ~ irmão
+irmão + irmão seguinte
+pai > filho
