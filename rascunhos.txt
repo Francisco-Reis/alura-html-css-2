@@ -54,3 +54,17 @@ perspective: a distancia virtual dos olhos para a tela
 perspective-origin: posição da tela do observador
 transform-style: preserve-3d -> caso for ter efeito 3d dentro de outro elemento 3d, como um cubo
 com suas 6 faces, por exemplo.
+
+-- Sombra --
+Sombras para texto:
+text-shadow: deslocX deslocY cor;
+Para objetos:
+box-shadow: deslocX deslocY difusao cor
+Exemplo de sombra dentro?
+box-shadow: ...(sombra de fora), inset ...(sombra de dentro);
+
+-- Opaco --
+Niveis de transparencia de elementos:
+opacity: 0.6;
+Opacidade de cor, usar
+rgba(0,0,0,transpacencia);
