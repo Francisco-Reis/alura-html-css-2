@@ -68,3 +68,22 @@ Niveis de transparencia de elementos:
 opacity: 0.6;
 Opacidade de cor, usar
 rgba(0,0,0,transpacencia);
+
+-- Gradiente --
+Antigamente era feito só por imagens, agora pode ser feito via CSS
+> background-image: linear-gradient(direção, primeira cor, segunda cor tamanho%, ... , n cores)
+Ex: background-image: linear-gradient(to bottom, red, black);
+Para nao ocupara tudo:
+> background-size: largura altura;
+Para nao repetir:
+> backgroound-repeat: no-repeat;
+Fazendo faixas transversais translucidas:
+> background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px
+                  , rgba(0,0,0,.1) 15px, transparent 15px, transparent);
+> background-size: 20px 20px;
+> background-attachment: fixed; (fixa ao fundo da tela, efeito ao rolar);
+Faixa fina em gradiente:
+> background-image: linear-gradient(to right, black, #C00, black);
+> background-repeat: no-repeat;
+> background-size: 80% 5px;
+> background-position: 50% 50%;
