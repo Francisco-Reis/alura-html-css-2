@@ -132,4 +132,13 @@ ex: blockquote:nth-of-type(even) -> pega todos os blockquote impares da pagina
 É possivel selecionar duas pseudoclasses de uma vez:
 :nth-child(1):nth-last-child(1) -> pega somente elementos q sao filhos unicos
 :only-child -> faz o mesmo q a linha acima
-:nth-last-of-child, :nth-last-of-type, comeća a contagem de tras pra frente
+:nth-last-of-child, :nth-last-of-type, comeca a contagem de tras pra frente
+
+----- PseudoElemento ------
+Similar as pseudoclasses, podem ser selecionados com ::
+> p::first-letter -> pega a primeira letra do parágrafo.
+
+>blockquote::before { content: '"'} coloca um caracter antes de um elemento totalmente via css
+Também com o ::after. Precisa ter a propriedade content no interior.
+> content: attr(data-x) -> pega o text ode um atributo dat-x. (atributos customizaveis comecam com
+data-)
