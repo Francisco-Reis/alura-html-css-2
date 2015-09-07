@@ -142,3 +142,44 @@ Similar as pseudoclasses, podem ser selecionados com ::
 Também com o ::after. Precisa ter a propriedade content no interior.
 > content: attr(data-x) -> pega o text ode um atributo dat-x. (atributos customizaveis comecam com
 data-)
+
+---- FORM ---
+Padrào
+<form>
+    <label>
+        Campo
+        <input name="campo">
+    </label>
+</form>
+
+input radio: todos precisam do mesmo nome
+ex: <input type="radio" name="assunto" value="duvida" required>
+input placeholder: Dica de campo, aparece translucido
+
+textarea: para textos, possui atributos cols e rows para tamanho.
+ex: <textarea id="msg" name="mensagem" cols="30" rows="6"></textarea>
+
+button: para enviar
+<button type="submit">Enviar</button>
+
+input email: Já faz a validaçao de email automaticamente
+atributo required: torna o campo obrigatório.
+         autofocus: pagina abre com campo em foco
+
+Para agrupar dados no form:
+<fieldset>
+    <legend>Dados pessoais:</legend>
+    ...
+</fieldset>
+
+Listas: tag select
+Ex: <select>
+  <option>Blog</option>
+  <option>Serviço</option>
+  <option>Outro</option>
+</select>
+
+Expressoes regulares (REGEX):
+<input type="tipo" pattern="[A-Za-z0-9]*">
+Personalizar mensagem de erro: atributo title
+<input type="tipo" pattern="[0-9]*" title="Só numeros por favor">
