@@ -183,3 +183,9 @@ Expressoes regulares (REGEX):
 <input type="tipo" pattern="[A-Za-z0-9]*">
 Personalizar mensagem de erro: atributo title
 <input type="tipo" pattern="[0-9]*" title="Só numeros por favor">
+
+--- Calculos no CSS --
+com a funcao calc()
+> calc(100% - 300px);
+box-sizing: Define o metodo de contagem de largura
+Ex: border-box calcula incluindo os paddings
