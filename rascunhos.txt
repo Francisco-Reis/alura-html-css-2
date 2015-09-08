@@ -189,3 +189,69 @@ com a funcao calc()
 > calc(100% - 300px);
 box-sizing: Define o metodo de contagem de largura
 Ex: border-box calcula incluindo os paddings
+
+--- EFEITOS ---
+
+Transition: aplica as alterações de forma gradual, só pra propriedades dinamicas (:hover, :focus)
+> transition: 1s; (segundo)
+É possivel especificar quais atributos serao afetados pelo transform
+> transition: transform 1s, box-shadow 2s;
+transition-delay: tempo de espera entre as transições
+> transition-delay: 1s, 3s; a primeira começa depois de 1 seg e a segunda 3seg depois da primeira
+OBS: Sempre colocar transition fora do elemento :hover pra fazer o efeito inverso ao sair
+
+Animation: aplica animações nas propriedades gerais
+Ex: Fazer o titulo aparecer em 2 segundos:
+h1 {
+    animation: aparece 2s;
+}
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+animation-delay: 2s; -> tempo de espera pra animacao começar
+animation-fill-mode: backwards; -> elemento desaparece antes da animação começar
+
+Animação de flutuação:
+elemento {
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+    @keyframes flutua {
+        from {
+            top: -5px;
+        }
+        to {
+            top: 5px;
+        }
+}
+
+---- FLEXBOX ----
+Torna o container que tem os filhos organizador do layout deles
+> div { display:flex }
+Centralizar horizontalmente:
+> align-items: center;
+Distribuir espacos:
+> justify-content: space-between;
+Distribuir verticalmente: (o padrao é horizontal)
+> flex-direction: column;
+Proporção dos objetos no flex:
+> flex: 1 (setando 1 todos ficam do mesmo tamanho)
+Alterando o filho:
+Ex: box:nth-child(2) {
+ flex: 2;
+ order: 1;
+}
+O código acima faz o segundo elemento ter o dobrodo tamanho dos demais e tb ocupara primeira posição
+Caso somente um objeto contenha a tag flex, ele vai ocupar todo o espaço disponivel para ele
+Usar: flex: flex-grow flex-shrink flex-basis
+para controlar as linhas e colunas:
+Ex: flex: 1 1 45%;
+Para quebrar linhas no flex:
+> flex-wrap: wrap;

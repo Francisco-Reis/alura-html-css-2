@@ -26,6 +26,21 @@
     -webkit-transform: rotate(-5deg) skew(-10deg);
             transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+@keyframes flutua {
+  from {
+    top: -5px;
+  }
+  to {
+    top: 5px;
+  }
+}
+.saudacao:hover em {
+  animation-play-state: paused;
 }
 .botao-index {
     font-size: 1.25em;
@@ -49,22 +64,24 @@
 }
 .trabalhos {
     background-color: #3C1D3D;
-    border-top: .5em solid #000;
-    border-bottom: .5em solid #000;
+    /*border-top: .5em solid #000;
+    border-bottom: .5em solid #000;*/
     background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px, transparent 15px, transparent);
     background-size: 20px 20px;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 .trabalhos h2 {
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
+    /*overflow: hidden;*/
+    display: flex;
     border: .5em solid black;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    /*float: left;
+    width: 33.333%;*/
+    flex: 1;
 }
 .trabalhos img {
     width: 100%;
@@ -75,7 +92,7 @@
     position: relative;
     background-image: linear-gradient(45deg, transparent, transparent 14px, rgba(255,255,255,.1) 14px, rgba(255,255,255,.1) 15px, transparent 15px, transparent);
     background-size: 20px 20px;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     color: #FFF;
     border-bottom: .5em solid #851944;
 }
@@ -116,6 +133,7 @@ body {
             perspective: 6px;
     -webkit-perspective-origin: 50% 160px;
             perspective-origin: 50% 160px;
+    display: block;
 }
 .palavras-home {
     -webkit-transform-style: preserve-3d;
@@ -125,6 +143,14 @@ body {
     right: 0;
     top: 0;
     left: 0;
+    animation: aparece 2s;
+}
+@keyframes aparece {
+  /* podemos usar a palavra-chave "from" também no lugar de 0% */
+  0% {
+    opacity: 0;
+    transform: scale(0.001);
+  }
 }
 .palavra-home {
     font-family: "Shadows Into Light", cursive;
@@ -241,6 +267,9 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;
@@ -253,12 +282,36 @@ body {
     padding: 1.5em;
     display: none;
 }
-.blog a:hover + .inicio-post,
-.blog a:focus + .inicio-post {
+.blog li a:hover + .inicio-post,
+.blog li a:focus + .inicio-post {
     display: block;
 }
-.blog a:hover,
-.blog a:focus {
+.blog li a:hover,
+.blog li a:focus {
     background-color: #F2FFFC;
     color: #F26;
+}
+
+.botao-index:hover,
+.botao-index:focus {
+    box-shadow: 0 0 10px #FA9;
+    color: white;
+    text-decoration: none;
+    background-color: #C54974;
+    transition: .5s;
+}
+.trabalhos li:first-child {
+  transform: scale(1.2);
+  order: 2;
+}
+
+.trabalhos li:nth-child(2) {
+  order: 1;
+}
+
+.trabalhos li:last-child {
+  order: 3;
+}
+.trabalhos li {
+  border: .5em solid #000;
 }
